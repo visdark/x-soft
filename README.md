@@ -4,9 +4,7 @@ FXBTG程序界面设计-前端部分
 
 ### 演示
 
-你可以点击 [GIT演示效果地址](https://github.com/visdark/x-soft/edit/master/README.md) 进行查看。
-
-你可以点击 [项目地址](https://github.com/visdark/x-soft/edit/master/README.md) 进行查看。
+你可以点击 [GIT演示效果地址](https://github.com/visdark/x-soft/edit/master/README.md) 进行查看。也可以点击 [项目地址](https://github.com/visdark/x-soft/edit/master/README.md) 进行查看。
 
 ### 更新日志
 
