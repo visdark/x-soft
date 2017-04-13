@@ -1,8 +1,15 @@
-## 演示地址
+## 项目相关
+
+### 演示
 
 你可以点击 [GIT演示效果地址](https://github.com/visdark/x-soft/edit/master/README.md) 进行查看。
 
 你可以点击 [项目地址](https://github.com/visdark/x-soft/edit/master/README.md) 进行查看。
+
+### 更新日志
+
+- 17-4-13 初始化
+- 17-4-14
 
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
