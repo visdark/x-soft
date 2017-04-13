@@ -1,4 +1,4 @@
-## x-soft 项目 ![Version Number](https://img.shields.io/npm/v/generator-qmui.svg?style=flat)
+## x-soft 项目 [Version Number](https://img.shields.io/npm/v/generator-qmui.svg?style=flat)
 
 
 > 一个旨在提高 UI 开发效率、快速产生项目 UI 的前端框架
