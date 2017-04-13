@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## 结构声明
 
 You can use the [editor on GitHub](https://github.com/visdark/x-soft/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
