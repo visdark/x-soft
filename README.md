@@ -1,15 +1,17 @@
 ## x-soft 项目 ![Version Number](http://visdark.com/x-soft/src/svg/npm.svg)
 
+更新者：visdark
 
 > 一个账号链接全球金融市场，提供有价值的金融服务。
 >
 > 官网：[http://fxbtg-bank.com](http://fxbtg-bank.com)
 >
-> 你可以点击 [GIT演示效果地址](https://github.com/visdark/x-soft/edit/master/README.md) 进行查看。也可以点击 [完整实例](http://x-soft.visdark.com/) 进行查看。
+> 你可以点击 [GIT演示效果地址](http://visdark.com/x-soft/dist/index.html) 进行查看。也可以点击 [完整实例](http://x-soft.visdark.com/) 进行查看。
 
 ## 我们的愿景
 
 创造专业，公平，安全值得信赖的市场环境。
+
 
 ## 团队规范代码
 
