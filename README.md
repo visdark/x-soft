@@ -91,7 +91,7 @@
 	 * Copyright (c) 2015 Tencent FXBTG, All rights reserved.
 	 * http://www.fxbtg-bank.com/
 	 * Code licensed under the BSD License:
-	 * http://www.AlloyTeam.com/license.txt
+	 * http://www.fxbtg-bank.com/license.txt
 	 * 
 	 * @version 0.0.1
 	 * @author	fxbtg <cs@fxbtg-bank.com>
