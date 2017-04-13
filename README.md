@@ -102,7 +102,7 @@
 	/**
 	 * 注释
 	 */
-	Jx().$package('tencent.alloyteam', function(J) {
+	Jx().$package('fxbtg', function(J) {
 		var self = this,
 			$D = J.dom,
 			$E = J.event,
@@ -111,8 +111,8 @@
 		// 输出字符串'Hello world!'
 		J.out('Hello world!');
 
-		// 输出this === tencent.alloyteam的判断结果
-		J.out(this === tencent.alloyteam);
+		// 输出this === fxbtg的判断结果
+		J.out(this === fxbtg);
 	});
 
 
