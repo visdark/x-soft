@@ -1,0 +1,76 @@
+#prolist ul.proList {
+    border-top: solid 1px rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    z-index: 3;
+    overflow-y: scroll;
+    position: absolute;
+    top: 0;
+}
+#prolist ul.proList li {
+    box-sizing: border-box;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+    height: 3vh;
+    line-height: 3vh;
+}
+#prolist ul.proList li.flex .span {
+    box-sizing: border-box;
+    padding: 0 10px;
+    overflow: hidden;
+    border-left: solid 1px rgba(255, 255, 255, 0.2);
+}
+#prolist ul.proList .col-10vw {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgba(255, 255, 255, 0.8);
+    padding-left: 10px;
+}
+#prolist ul.proList .col-1vw {
+    color: rgba(255, 255, 255, 0.8);
+}
+#prolist ul.proList li.color-0:hover {
+    cursor: pointer;
+    background-color: rgba(0, 255, 0, 0.8);
+}
+#prolist ul.proList li.color-0:hover .col .t-r {
+    color: rgba(255, 255, 255, 0.8);
+}
+#prolist ul.proList li.color-0 .col .t-r {
+    color: rgba(0, 255, 0, 0.6);
+}
+#prolist ul.proList li.color-1:hover {
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.8);
+}
+#prolist ul.proList li.color-1:hover .col .t-r {
+    color: rgba(255, 255, 255, 0.8);
+}
+#prolist ul.proList li.color-1 .col .t-r {
+    color: rgba(255, 0, 0, 0.6);
+}
+#prolist ul.proList .app-nav {
+    background-color: rgba(255, 255, 255, 0.4);
+    display: block;
+    width: 100%;
+    height: 3vh;
+    line-height: 3vh;
+    padding: 0 10px;
+}
+#prolist ul.proList .app-nav a {
+    padding: 0 10px;
+    margin: 0 2px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+#prolist ul.proList .icon-0:before {
+    content: "\e616";
+    color: rgba(0, 255, 0, 0.6);
+}
+#prolist ul.proList .icon-0:before:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+#prolist ul.proList .icon-1:before {
+    content: "\e618";
+    color: rgba(255, 0, 0, 0.6);
+}
+#prolist ul.proList .icon-1:before:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
