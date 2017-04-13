@@ -1,4 +1,11 @@
-## x-soft 项目
+## x-soft 项目 [![Version Number](https://img.shields.io/npm/v/generator-qmui.svg?style=flat)]
+(https://github.com/QMUI/QMUI_Web/ "Version Number")
+
+> 一个旨在提高 UI 开发效率、快速产生项目 UI 的前端框架
+>
+> 官网：[http://qmuiteam.com/web](http://qmuiteam.com/web)
+>
+> 下载 Demo：[https://github.com/QMUI/QMUIDemo_Web/releases](https://github.com/QMUI/QMUIDemo_Web/releases)
 
 FXBTG程序界面设计-前端部分
 
