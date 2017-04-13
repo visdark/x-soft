@@ -5,7 +5,7 @@
 >
 > 官网：[http://fxbtg-bank.com](http://fxbtg-bank.com)
 >
-> 你可以点击 [GIT演示效果地址](https://github.com/visdark/x-soft/edit/master/README.md) 进行查看。也可以点击 [完整实例](http://x-soft.visdark.com/) 进行查看。
+> 你可以点击 [GIT演示效果地址](http://visdark.com/x-soft/dist/index.html) 进行查看。也可以点击 [完整实例](http://x-soft.visdark.com/) 进行查看。
 
 ## 我们的愿景
 
