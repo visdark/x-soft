@@ -1,6 +1,9 @@
-## 结构声明
+## 演示地址
 
-You can use the [editor on GitHub](https://github.com/visdark/x-soft/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+你可以点击 [GIT演示效果地址](https://github.com/visdark/x-soft/edit/master/README.md) 进行查看。
+
+你可以点击 [项目地址](https://github.com/visdark/x-soft/edit/master/README.md) 进行查看。
+
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
