@@ -13,7 +13,7 @@
 
 ## 团队规范代码
 
-虽然这些细节是小事，但是却体现了一个coder的专业程度。 更多详细情况请看：[http://alloyteam.github.io/CodeGuide/](http://alloyteam.github.io/CodeGuide/) 和 [http://codeguide.bootcss.com/](http://codeguide.bootcss.com/)  
+虽然这些细节是小事，但是却体现了一个coder的专业程度。 更多详细情况请看：[http://visdark.com/code/](http://visdark.com/code/)  
 
 ### 标准文件结构
 
