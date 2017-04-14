@@ -1,0 +1,18 @@
+@import "初始化";
+/* 包括box和text基本布局 */
+
+//文字排版通用函数
+.text{
+  &-c{text-align: center;}
+  &-r{text-align: right;}
+  &-l{text-align: left;}
+}
+
+//盒子初始化。默认无边距
+.box {
+  padding: 0;
+  margin: 0;
+  &-mid{margin: 0 auto;}
+  &-r{float: right;}
+  &-l{float: left;}
+}
