@@ -1,0 +1,11 @@
+//透明度写法简化
+.filter(@tmd:50) {
+  filter: alpha(Opacity=@tmd);
+  -moz-opacity: (@tmd/100);
+  opacity: (@tmd/100);
+}
+// 高度居中函数，需要声明高度，仅仅限于单行文本
+.height-mid(@h:3vh) {
+  height: @h;
+  line-height: @h;
+}
