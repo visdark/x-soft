@@ -30,7 +30,7 @@
 	 |   |    |-- index.css	  //组件依赖的css文件
 	 |   |    |-- index.js	  //组件依赖的js文件
 	 |--[lib]		//lib公共依赖库
-     	 |   |--js1.js //公共库
+     |   |--js1.js //公共库
 	 |--[js]		//js文件夹
 	 |   |-- main.js
 	 |--[style]		//所有样式相关的css和image
