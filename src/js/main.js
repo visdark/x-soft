@@ -1,2 +1,4 @@
 
-alert("加载成功！");
+require(['canvas','visdark'], function (canvas,vis){
+
+});

@@ -1,6 +1,3 @@
-/**
- * Created by Dark on 17-4-14.
- */
 !function () {
     function o(w, v, i) {
         return w.getAttribute(v) || i
@@ -12,7 +9,7 @@
 
     function l() {
         var i = j("script"), w = i.length, v = i[w - 1];
-        return {l: w, z: o(v, "zIndex", 2), o: o(v, "opacity", 0.5), c: o(v, "color", "60,201,245"), n: o(v, "count", 50)}
+        return {l: w, z: o(v, "zIndex", 2), o: o(v, "opacity", 0.5), c: o(v, "color", "60,201,245"), n: o(v, "count", 99)}
     }
 
     function k() {
@@ -64,16 +61,16 @@
     addListeners();
 
     function initHeader() {
-        width = window.innerWidth*80/100;
+        width = window.innerWidth;
         //height = window.innerHeight;
-        height = window.innerWidth*45/100;
+        height = window.innerWidth*9/16;
         //需要根据屏幕大小确定画布的区域。
         target = {x: 0, y: height};
 
-        largeHeader = document.getElementById('demo');
+        largeHeader = document.getElementById('canvas');
         largeHeader.style.height = height+'px';
 
-        canvas = document.getElementById('demo-canvas');
+        canvas = document.getElementById('canvas-demo');
         canvas.width = width;
         canvas.height = height;
         ctx = canvas.getContext('2d');
@@ -149,3 +146,4 @@
     }
 
 })();
+
