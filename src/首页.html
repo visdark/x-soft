@@ -11,7 +11,7 @@
 <body>
 <div class="box-app">
     <div class="box-hd">
-        <div class="box-top" flex="main:left cross:center box:justify">
+        <div class="box-hd-top" flex="main:left cross:center box:justify">
             <div flex-box="1" class="title"></div>
             <div flex-box="1"></div>
             <div flex-box="1">
@@ -26,25 +26,36 @@
                 </div>
             </div>
         </div>
-        <div class="box-nav" flex="main:left cross:center box:mean">
-            <div flex-box="2"><i class="icon iconfont icon-FXBTG" style="font-size: 16vw;margin-top: 4vw; "></i></div>
-            <div flex-box="1" pointer><i class="icon iconfont icon-home"></i></div>
-            <div flex-box="1" pointer><i class="icon iconfont icon-dollar"></i></div>
-            <div flex-box="1" pointer><i class="icon iconfont icon-chat"></i></div>
-            <div flex-box="1" pointer><i class="icon iconfont icon-business"></i></div>
-            <div flex-box="1" pointer><i class="icon iconfont icon-user"></i></div>
-            <div flex-box="1" pointer><i class="icon iconfont icon-news"></i></div>
-            <div flex-box="1" pointer><i class="icon iconfont icon-earth"></i></div>
-            <div flex-box="2">注册登录</div>
+        <div class="box-hd-nav" flex="main:left cross:center box:mean">
+            <div flex-box="2"><i class="icon iconfont icon-FXBTG" style="font-size: 16vw;margin-top: 1vw; "></i></div>
+            <div flex-box="1" pointer><i class="icon iconfont icon-home nav-item"></i><br/>
+            主界面</div>
+            <div flex-box="1" pointer><i class="icon iconfont icon-dollar nav-item"></i><br/>交易区</div>
+            <div flex-box="1" pointer><i class="icon iconfont icon-chat nav-item"></i><br/>聊天室</div>
+            <div flex-box="1" pointer><i class="icon iconfont icon-business nav-item"></i><br/>业务申请</div>
+            <div flex-box="1" pointer><i class="icon iconfont icon-icon02 nav-item"></i><br/>用户中心</div>
+            <div flex-box="1" pointer><i class="icon iconfont icon-news nav-item"></i><br/>新闻</div>
+            <div flex-box="1" pointer><i class="icon iconfont icon-earth nav-item"></i><br/>联系</div>
+            <div flex-box="2"><i class="icon iconfont icon-user"></i> 立即登录<br/>
+            <p>还没有账户，请立即注册</p>
+            </div>
         </div>
+    </div>
+    <div class="box-bd">
+      <div class="box-bd-main">
+          <div class="pro">
+              产品列表
+          </div>
+          <div class="chart">
+              走势图列表
+          </div>
+      </div>
+
+        盒子2
+
+
 
     </div>
-
-
-
-
-
-    <div class="box-bd">盒子2</div>
     <div class="box-ft">盒子3</div>
     <div id="canvas">
         <canvas id="canvas-demo"></canvas>

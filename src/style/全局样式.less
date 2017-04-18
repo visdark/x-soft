@@ -205,11 +205,57 @@ h6 {
     position: absolute;
     width: 100%;
     top: 0;
-    z-index: 3
+    z-index: 3;
+    &-top {
+      height: @h-1*3;
+      font-size: @f-16;
+      position: absolute;
+      width: 100%;
+      top:0;
+      .title{
+        font-size: @f-12;
+        padding-left: @f-10;
+      }
+      .iconfont {
+        font-size: @f-16;
+        padding: 0 @f-10;
+        line-height: @h-1*3 ;
+        &:hover{
+          background-color: @bai-2;
+        }
+        &.bg-red:hover{background-color: @red-6;}
+      }
+    }
+    &-nav{
+      height: @h-1*12;
+      [flex-box]{
+        text-align: center;
+        padding: @h-1*3 0;
+        box-sizing: border-box;
+        font-size: @w-1;
+        &:hover[pointer]{
+          background-color: @bai-1;
+          -webkit-animation: neon 1.5s ease-in-out infinite alternate;
+          -moz-animation: neon 1.5s ease-in-out infinite alternate;
+          animation: neon 1.5s ease-in-out infinite alternate;
+        }
+        p{
+          font-size: @min-size;
+        }
+        .nav-item {
+          font-size: 3vw;
+          line-height: 3vw;
+          &:hover{
+            -webkit-animation: neon 1.5s ease-in-out infinite alternate;
+            -moz-animation: neon 1.5s ease-in-out infinite alternate;
+            animation: neon 1.5s ease-in-out infinite alternate;}
+        }
+      }
+    }
   }
   &-bd {
     height: @h-1*85;
-    background-color: @hei-8;
+    background-color: @hei-6;
     font-size: @min-size;
     position: absolute;
     width: 100%;
@@ -218,6 +264,7 @@ h6 {
   }
   &-ft {
     height: @h-1*3;
+    line-height: @h-1*3;
     background-color: @hei-05;
     font-size: @min-size;
     position: absolute;
@@ -225,37 +272,27 @@ h6 {
     bottom: 0;
     z-index: 3
   }
-  &-top {
-    height: @h-1*3;
-    font-size: @f-16;
-    position: absolute;
-    width: 100%;
-    top:0;
-    .title{
-      font-size: @f-12;
-      padding-left: @f-10;
-    }
-    .iconfont {
-      font-size: @f-16;
-      padding: 0 @f-10;
-      line-height: @h-1*3 ;
-      &:hover{
-        background-color: @bai-2;
-      }
-      &.bg-red:hover{background-color: @red-6;}
-    }
+
+}
+@-webkit-keyframes neon {
+  from {
+    text-shadow: 0 0 10px @bai-8,
+    0 0 20px  @bai-8,
+    0 0 30px  @bai-8,
+    0 0 40px   @color-1,
+    0 0 70px   @color-1,
+    0 0 80px   @color-1,
+    0 0 100px  @color-1,
+    0 0 150px  @color-1;
   }
-  &-nav{
-    height: @h-1*12;
-    [flex-box]{
-      text-align: center;
-     &:hover[pointer]{
-        background-color: @bai-1;
-      }
-      .iconfont {
-        font-size: 3vw;
-        line-height: @h-1*12;
-      }
-    }
+  to {
+    text-shadow: 0 0 5px @bai-8,
+    0 0 10px @bai-8,
+    0 0 15px @bai-8,
+    0 0 20px @color-1,
+    0 0 35px @color-1,
+    0 0 40px @color-1,
+    0 0 50px @color-1,
+    0 0 75px @color-1;
   }
 }
