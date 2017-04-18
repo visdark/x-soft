@@ -2,17 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>x-soft首页主界面</title>
+    <title>x-soft首页</title>
     <!--字体文件包，下载后直接覆盖即可-->
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_kt91jtjpwvasv2t9.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_62kklvm82z3q5mi.css">
     <!--全部样式集合-->
     <link rel="stylesheet" href="style/main.css"/>
 </head>
 <body>
 <div class="box-app">
-    <!--<div class="box-hd">盒子1</div>-->
-    <!--<div class="box-bd">盒子2</div>-->
-    <!--<div class="box-ft">盒子3</div>-->
+    <div class="box-hd">
+        <div class="box-top" flex="main:left cross:center box:justify">
+            <div flex-box="1" class="title"></div>
+            <div flex-box="1"></div>
+            <div flex-box="1">
+                <div flex="">
+                    <div flex-box="1"> <i class="icon iconfont icon-zuixiaohua" pointer></i>
+                      </div>
+                    <div flex-box="1">
+                        <i class="icon iconfont icon-zuidahua" pointer></i>
+                        </div>
+                    <div flex-box="1">
+                        <i class="icon iconfont icon-guanbi bg-red" pointer></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="box-nav" flex="main:left cross:center box:mean">
+            <div flex-box="2"><i class="icon iconfont icon-FXBTG" style="font-size: 16vw;margin-top: 4vw; "></i></div>
+            <div flex-box="1" pointer><i class="icon iconfont icon-home"></i></div>
+            <div flex-box="1" pointer><i class="icon iconfont icon-dollar"></i></div>
+            <div flex-box="1" pointer><i class="icon iconfont icon-chat"></i></div>
+            <div flex-box="1" pointer><i class="icon iconfont icon-business"></i></div>
+            <div flex-box="1" pointer><i class="icon iconfont icon-user"></i></div>
+            <div flex-box="1" pointer><i class="icon iconfont icon-news"></i></div>
+            <div flex-box="1" pointer><i class="icon iconfont icon-earth"></i></div>
+            <div flex-box="2">注册登录</div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="box-bd">盒子2</div>
+    <div class="box-ft">盒子3</div>
     <div id="canvas">
         <canvas id="canvas-demo"></canvas>
     </div>

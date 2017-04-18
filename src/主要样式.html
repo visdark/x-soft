@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>x-soft-主要样式</title>
+    <!--字体文件包，下载后直接覆盖即可-->
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_kt91jtjpwvasv2t9.css">
+    <!--全部样式集合-->
+    <link rel="stylesheet" href="style/main.css"/>
+</head>
+<body>
+<div class="demo" flex="main:center cross:center" style="height: 100%">
+<div class="container">
+    <h1 class="h1">概览</h1>
+    <p>有关于程序框架的主要样式表展示，服务于程序建设项目。需要注意的点：1.不考虑浏览器兼容性，以google浏览器为主即可，也就是说无需引用Normalize.css。2.屏幕比保持在16:9即可。</p>
+    <h2>布局容器</h2>
+    <p>.container 类用于固定宽度并支持响应式布局的容器。为了演示方便，这里统一设置宽度为1280px。</p>
+    <h2>flex布局系统</h2>
+    <p>布局系统有别于其他的写法，在这里故进行说明。</p>
+    <h3>1.快速入门</h3>
+    <p>flex只有两个属性，一个是容器属性flex，一个是子元素属性flex-box</p>
+    <div flex="dir:left main:left cross:top" style="background-color: black">
+        <div flex-box="0" style="background-color: red">你好世界。</div>
+    </div>
+    <h3>2.盒子属性参考</h3>
+    <div flex="dir:left main:left cross:top box:mean" style="background-color: black">
+        <div flex-box="1" style="background-color: red">dir：主轴方向</div>
+        <div flex-box="1" style="background-color: orange">main：主轴对齐方式</div>
+        <div flex-box="1" style="background-color: red">cross：交叉轴对齐方式</div>
+        <div flex-box="1" style="background-color: orange">box：子元素设置</div>
+    </div>
+    <div flex="dir:left main:left cross:top box:mean" style="background-color: black">
+        <div flex-box="1" style="color: red">
+            top：从上到下<br/>
+            right：从右到左<br/>
+            bottom：从上到下<br/>
+            left：从左到右（默认）<br/>
+        </div>
+        <div flex-box="1" style="color: orange">
+            right：从右到左<br/>
+            left：从左到右（默认）<br/>
+            justify：两端对齐<br/>
+            center：居中对齐<br/>
+        </div>
+        <div flex-box="1" style="color: red">
+            top：从上到下<br/>
+            bottom：从上到下<br/>
+            baseline：跟随内容高度对齐<br/>
+            center：居中对齐<br/>
+            stretch：高度并排铺满（默认）<br/>
+        </div>
+        <div flex-box="1" style="color: orange">
+            mean：子元素平分空间<br/>
+            first：第一个子元素不要多余空间，其他子元素平分多余空间<br/>
+            last：最后一个子元素不要多余空间，其他子元素平分多余空间<br/>
+            justify：两端第一个元素不要多余空间，其他子元素平分多余空间<br/>
+        </div>
+    </div>
+    <h3>3.内容属性参考</h3>
+    <p>取值范围(0-10)，单独设置子元素多余空间的如何分配，设置为0，则子元素不占用多余的多余空间
+        多余空间分配 = 当前box值/子元素的box值相加之和</p>
+    <div class="demo" flex="main:center cross:center" style="background-color: black;height: 5rem">
+        <div style="background-color: red">绝对居中</div>
+    </div>
+    <h3>4.本程序用到的地方示范</h3>
+    <h4>4.1.标题栏目</h4>
+    <div class="demo-4-1" flex="main:left cross:center box:justify" style="background-color: black;">
+        <div flex-box="1" style="background-color: orange">标题</div>
+        <div flex-box="1"></div>
+        <div flex-box="1" style="color: orange">
+            <div flex="" style="background-color: red">
+                <div flex-box="1">图标最大化</div>
+                <div flex-box="1">图标最小化</div>
+                <div flex-box="1">图标关闭</div>
+            </div>
+        </div>
+    </div>
+    <h4>4.1.图标排列</h4>
+
+    图标  登录
+
+
+    <h2>排版标题示范</h2>
+    <h1>标题1：基础数值，默认32倍数的值为32px</h1>
+    <h2>标题2:30倍数</h2>
+    <h3>标题3:24倍数</h3>
+    <h4>标题4:18倍数</h4>
+    <h5>标题5:14倍数</h5>
+    <h6>标题6:12倍数</h6>
+
+</div>
+    </div>
+</body>
+</html>

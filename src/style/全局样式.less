@@ -1,6 +1,188 @@
 @import "初始化";
-/* 包括box和text基本布局 */
+/* 全局样式布局 */
 
+.flex-app (@flex, @flex-box) {
+  [@{flex}] {
+    overflow: hidden;
+    display: flex;
+    & > * {
+      display: block;
+      overflow: hidden;
+    }
+    & > [@{flex}] {
+      overflow: hidden;
+      display: flex;
+    }
+  }
+
+  [@{flex}~="dir:left"] {
+    flex-direction: row;
+  }
+
+  [@{flex}~="dir:right"] {
+    flex-direction: row-reverse;
+    -webkit-box-pack: end; //修复旧版本主轴和标准主轴flex表现不一致的bug
+  }
+
+  [@{flex}~="dir:top"] {
+    flex-direction: column;
+  }
+
+  [@{flex}~="dir:bottom"] {
+    flex-direction: column-reverse;
+    -webkit-box-pack: end; //修复旧版本主轴和标准主轴flex表现不一致的bug
+  }
+
+  [@{flex}~="main:left"] {
+    justify-content: flex-start;
+  }
+
+  [@{flex}~="main:right"] {
+    justify-content: flex-end;
+  }
+
+  [@{flex}~="main:justify"] {
+    justify-content: space-between;
+  }
+
+  [@{flex}~="main:center"] {
+    justify-content: center;
+  }
+
+  [@{flex}~="cross:top"] {
+    align-items: flex-start;
+  }
+
+  [@{flex}~="cross:bottom"] {
+    align-items: flex-end;
+  }
+  [@{flex}~="cross:center"] {
+    align-items: center;
+  }
+  [@{flex}~="cross:baseline"] {
+    align-items: baseline;
+  }
+  [@{flex}~="cross:stretch"] {
+    align-items: stretch;
+  }
+  [@{flex}~="box:mean"] > *, //所有元素
+  [@{flex}~="box:first"] > *, //第一个子元素
+  [@{flex}~="box:last"] > *, //最后一个子元素
+  [@{flex}~="box:justify"] > * //两端第一个子元素
+  {
+    width: 0%;
+    height: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  [@{flex}~="box:first"] > *:first-child, //第一个子元素
+  [@{flex}~="box:last"] > *:last-child, //最后一个子元素
+  [@{flex}~="box:justify"] > *:first-child, //两端第一个子元素
+  [@{flex}~="box:justify"] > *:last-child //两端最后一个子元素
+  {
+    width: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  [@{flex}~="dir:top"][@{flex}~="box:mean"] > *,
+  [@{flex}~="dir:top"][@{flex}~="box:first"] > *, //第一个子元素
+  [@{flex}~="dir:top"][@{flex}~="box:last"] > *, //最后一个子元素
+  [@{flex}~="dir:top"][@{flex}~="box:justify"] > *, //两端最后一个子元素
+  [@{flex}~="dir:bottom"][@{flex}~="box:mean"] > *,
+  [@{flex}~="dir:bottom"][@{flex}~="box:first"] > *, //第一个子元素
+  [@{flex}~="dir:bottom"][@{flex}~="box:last"] > *, //最后一个子元素
+  [@{flex}~="dir:bottom"][@{flex}~="box:justify"] > * //两端最后一个子元素
+  {
+    width: auto;
+    height: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  [@{flex}~="dir:top"][@{flex}~="box:first"] > *:first-child, //第一个子元素
+  [@{flex}~="dir:top"][@{flex}~="box:last"] > *:last-child, //最后一个子元素
+  [@{flex}~="dir:top"][@{flex}~="box:justify"] > *:first-child, //两端第一一个子元素
+  [@{flex}~="dir:top"][@{flex}~="box:justify"] > *:last-child, //两端最后一个子元素
+  [@{flex}~="dir:bottom"][@{flex}~="box:first"] > *:first-child, //第一个子元素
+  [@{flex}~="dir:bottom"][@{flex}~="box:last"] > *:last-child, //最后一个子元素
+  [@{flex}~="dir:bottom"][@{flex}~="box:justify"] > *:first-child //两端第一一个子元素
+  [@{flex}~="dir:bottom"][@{flex}~="box:justify"] > *:last-child //两端最后一个子元素
+  {
+    height: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  //子元素伸缩比例循环
+  .flex-box(10);
+  .flex-box(@n, @i: 0) when (@i =< @n) {
+    [@{flex-box}="@{i}"] {
+      flex-grow: @i;
+      flex-shrink: @i;
+    }
+    .flex-box(@n, (@i + 1));
+  }
+
+}
+
+.flex-app(flex, flex-box); //使用flex和flex-box属性匹配
+// 十二格子 flex排列属性
+.col {
+  flex: 1 1 auto;
+}
+
+.col(12);
+.col(@col, @i: 1) when (@i =< @col) {
+  .col-@{i} {
+    flex: 0 0 (@i/12);
+    max-width: (@i/12)*100%;
+  }
+  .col(@col, (@i + 1));
+}
+
+//文字排版通用函数
+.container {
+  width: 1280px;
+  height: 720px;
+  margin: 0 auto;
+  padding: 0 @f-20;
+  overflow-y: auto;
+}
+
+//标题默认样式优化
+.h1 {
+  color: transparent;
+  text-shadow: rgba(255, 255, 255, 0.5) 0 5px 6px, rgba(255, 255, 255, 0.2) 1px 3px 3px;
+  -webkit-background-clip: text;
+  text-align: center;
+  background-color: black;
+  border-bottom: dotted 1px black;
+  margin: 30px 0;
+}
+
+h1 {
+  font-size: @f-32
+}
+
+h2 {
+  font-size: @f-30
+}
+
+h3 {
+  font-size: @f-24
+}
+
+h4 {
+  font-size: @f-18
+}
+
+h5 {
+  font-size: @f-14
+}
+
+h6 {
+  font-size: @f-12
+}
 //文字排版通用函数
 .text{
   &-c{text-align: center;}
@@ -16,7 +198,64 @@
   &-r{float: right;}
   &-l{float: left;}
   &-app{width: @width;height: @height;background: url('../image/canvas_back.jpg') no-repeat center center;background-size:100% 100%;margin: 0 auto;color: white;}
-  &-hd{height: @h-1*10;background-color: #007aff;font-size: @f-12;}
-  &-bd{height: @h-1*85;background-color: #152f15;font-size: @f-12;}
-  &-ft{height: @h-1*5;background-color: #ffa388;font-size: @f-12;}
+  &-hd {
+    height: @h-1*12;
+    background-color: @hei-05;
+    font-size: @min-size;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 3
+  }
+  &-bd {
+    height: @h-1*85;
+    background-color: @hei-8;
+    font-size: @min-size;
+    position: absolute;
+    width: 100%;
+    top: @h-1*12;
+    z-index: 3
+  }
+  &-ft {
+    height: @h-1*3;
+    background-color: @hei-05;
+    font-size: @min-size;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 3
+  }
+  &-top {
+    height: @h-1*3;
+    font-size: @f-16;
+    position: absolute;
+    width: 100%;
+    top:0;
+    .title{
+      font-size: @f-12;
+      padding-left: @f-10;
+    }
+    .iconfont {
+      font-size: @f-16;
+      padding: 0 @f-10;
+      line-height: @h-1*3 ;
+      &:hover{
+        background-color: @bai-2;
+      }
+      &.bg-red:hover{background-color: @red-6;}
+    }
+  }
+  &-nav{
+    height: @h-1*12;
+    [flex-box]{
+      text-align: center;
+     &:hover[pointer]{
+        background-color: @bai-1;
+      }
+      .iconfont {
+        font-size: 3vw;
+        line-height: @h-1*12;
+      }
+    }
+  }
 }
