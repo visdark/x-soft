@@ -11,7 +11,7 @@
 <body>
 <div class="box-app">
     <div class="box-hd">
-        <div class="box-hd-top" flex="main:left cross:center box:justify">
+        <div class="box-top" flex="main:left cross:center box:justify">
             <div flex-box="1" class="title"></div>
             <div flex-box="1"></div>
             <div flex-box="1">
@@ -42,19 +42,57 @@
         </div>
     </div>
     <div class="box-bd">
-      <div class="box-bd-main">
-          <div class="pro">
+      <div class="box-bd-main" flex="main:left cross:center box:mean">
+          <div class="pro" flex-box="1" id="pro">
+              <div class="hd" flex="main:left cross:center box:justify">
+                  <div flex-box="1" class="title">产品列表</div>
+                  <div flex-box="1"></div>
+                  <div flex-box="1">
+                      <div flex="">
+                          <div flex-box="1">
+                              <i class="icon iconfont icon-guanbi bg-red" pointer></i></div>
+                      </div>
+                  </div>
+              </div>
               产品列表
           </div>
-          <div class="chart">
+          <div class="chart" flex-box="2" id="chart">
+              <div class="hd" flex="main:left cross:center box:justify">
+                  <div flex-box="1">
+                      <div flex="">
+                      <div flex-box="1"> <i class="icon iconfont icon-zuixiaohua" onClick="onGo(this, 'chart', 'pro');"></i>
+                      </div>
+                  </div>
+                  </div>
+                  <div flex-box="1" style="width:100%;">
+                     <!--列表循环 开始-->
+                      <div flex>
+                          <div flex-box="1"> 111
+                          </div>
+                          <div flex-box="1">
+                              222
+                          </div>
+                          <div flex-box="1">
+                              333</div>
+                      </div>
+                      <!--列表循环 结束-->
+                  </div>
+                  <div flex-box="1"></div>
+                  <div flex-box="1">
+                      <div flex="">
+                          <div flex-box="1"> <i class="icon iconfont icon-zuixiaohua" pointer></i>
+                          </div>
+                          <div flex-box="1">
+                              <i class="icon iconfont icon-zuidahua" pointer></i>
+                          </div>
+                          <div flex-box="1">
+                              <i class="icon iconfont icon-guanbi bg-red" pointer></i></div>
+                      </div>
+                  </div>
+              </div>
               走势图列表
           </div>
       </div>
-
-        盒子2
-
-
-
     </div>
     <div class="box-ft">盒子3</div>
     <div id="canvas">

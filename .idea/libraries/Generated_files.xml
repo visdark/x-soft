@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/src/js/demo.min.js" />
+        <item url="file://$PROJECT_DIR$/src/js/main.min.js" />
+        <item url="file://$PROJECT_DIR$/src/js/canvas.min.js" />
+        <item url="file://$PROJECT_DIR$/src/js/require.min.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/src/js/demo.min.js" />
+      <root url="file://$PROJECT_DIR$/src/js/main.min.js" />
+      <root url="file://$PROJECT_DIR$/src/js/canvas.min.js" />
+      <root url="file://$PROJECT_DIR$/src/js/require.min.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

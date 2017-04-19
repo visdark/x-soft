@@ -2,7 +2,6 @@
     function o(w, v, i) {
         return w.getAttribute(v) || i
     }
-
     function j(i) {
         return document.getElementsByTagName(i)
     }

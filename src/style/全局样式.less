@@ -198,6 +198,26 @@ h6 {
   &-r{float: right;}
   &-l{float: left;}
   &-app{width: @width;height: @height;background: url('../image/canvas_back.jpg') no-repeat center center;background-size:100% 100%;margin: 0 auto;color: white;}
+  &-top {
+    height: @h-1*3;
+    font-size: @f-16;
+    position: absolute;
+    width: 100%;
+    top:0;
+    .title{
+      font-size: @f-12;
+      padding-left: @f-10;
+    }
+    .iconfont {
+      font-size: @f-16;
+      padding: 0 @f-10;
+      line-height: @h-1*3 ;
+      &:hover{
+        background-color: @bai-2;
+      }
+      &.bg-red:hover{background-color: @red-6;}
+    }
+  }
   &-hd {
     height: @h-1*12;
     background-color: @hei-05;
@@ -206,26 +226,6 @@ h6 {
     width: 100%;
     top: 0;
     z-index: 3;
-    &-top {
-      height: @h-1*3;
-      font-size: @f-16;
-      position: absolute;
-      width: 100%;
-      top:0;
-      .title{
-        font-size: @f-12;
-        padding-left: @f-10;
-      }
-      .iconfont {
-        font-size: @f-16;
-        padding: 0 @f-10;
-        line-height: @h-1*3 ;
-        &:hover{
-          background-color: @bai-2;
-        }
-        &.bg-red:hover{background-color: @red-6;}
-      }
-    }
     &-nav{
       height: @h-1*12;
       [flex-box]{
@@ -235,9 +235,6 @@ h6 {
         font-size: @w-1;
         &:hover[pointer]{
           background-color: @bai-1;
-          -webkit-animation: neon 1.5s ease-in-out infinite alternate;
-          -moz-animation: neon 1.5s ease-in-out infinite alternate;
-          animation: neon 1.5s ease-in-out infinite alternate;
         }
         p{
           font-size: @min-size;
@@ -246,6 +243,7 @@ h6 {
           font-size: 3vw;
           line-height: 3vw;
           &:hover{
+            cursor:pointer;
             -webkit-animation: neon 1.5s ease-in-out infinite alternate;
             -moz-animation: neon 1.5s ease-in-out infinite alternate;
             animation: neon 1.5s ease-in-out infinite alternate;}
@@ -272,7 +270,6 @@ h6 {
     bottom: 0;
     z-index: 3
   }
-
 }
 @-webkit-keyframes neon {
   from {
@@ -294,5 +291,36 @@ h6 {
     0 0 40px @color-1,
     0 0 50px @color-1,
     0 0 75px @color-1;
+  }
+}
+.pro{
+  background-color: #3c763d;
+  height: @h-1*85;
+  &.go{
+   display: none;
+    background-color: #5bc0de;
+  }
+}
+.chart{
+  background-color: red;
+  height: @h-1*85;
+}
+.hd{
+  height: @h-1*3;
+  font-size: @f-12;
+  top:0;
+  background-color: #1b303c;
+  .title{
+    font-size: @f-12;
+    padding-left: @f-10;
+  }
+  .iconfont {
+    font-size: @f-16;
+    padding: 0 @f-10;
+    line-height: @h-1*3 ;
+    &:hover{
+      background-color: @bai-2;
+    }
+    &.bg-red:hover{background-color: @red-6;}
   }
 }
