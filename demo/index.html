@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="CN">
+<head>
+    <title>FXBTG-您的金融理财管理专家，低成本和最佳执行；优越交易技术；从单个账户直接进场交易股票、期权、期货、外汇、债券、ETF和差价合约。</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="description" content="您的金融理财管理专家，低成本和最佳执行；优越交易技术；从单个账户直接进场交易股票、期权、期货、外汇、债券、ETF和差价合约。">
+    <meta name="keywords" content="股票、期权、期货、外汇、债券、ETF、差价合约">
+    <meta name="author" content="FXBTG">
+    <meta name="apple-mobile-web-app-title" content="IBKR">
+    <link rel="icon" sizes="192x192" href="images/home-screen-icon-192x192.png" />
+    <link rel="icon" sizes="128x128" href="images/home-screen-icon-128x128.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png" />
+    <link rel="stylesheet" media="screen" type="text/css" href="style/bootstrap.v3.3.6.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="style/font-awesome.v4.7.0.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="style/animate.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="style/ib-common.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="style/web-styles.css">
+    <link rel="stylesheet" media="screen" type="text/css" href="style/web-styles-cn.css">
+    <link rel="stylesheet" media="print" type="text/css" href="style/print-cn.css">
+</head>
+<body>
+<!-- 顶部区域 -->
+<header class="noprint">
+    <div class="navbartop megamenu navbartop-inverse navbartop-fixed-top hidden-xs">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="" target="_self" class="navbar-brand"><img src="images/nav_iblogo_scn.png" alt="盈透证券"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- 语言设置 -->
+                    <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">中文简体 <i class="fa fa-globe margin-left-10"></i></a>
+                        <ul class="dropdown-menu dropdown-menu-left dropdown-menu-col-sm-2">
+                            <li>
+                                <div class="megamenu-content">
+                                    <div class="row">
+                                        <ul class="col-sm-2 list-unstyled">
+                                            <li><a href="" target="_self">English</a></li>
+                                            <li><a href="" target="_self">Français</a></li>
+                                            <li><a href="" target="_self">Deutsch</a></li>
+                                            <li><a href="" target="_self">Español</a></li>
+                                            <li><a href="" target="_self">Italiano</a></li>
+                                            <li><a href="" target="_self">Pусский</a></li>
+                                            <li><a target="_self" href="">中文简体</a></li>
+                                            <li><a href="" target="_self">中文繁體</a></li>
+                                            <li><a href="" target="_self">日本語</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- SEARCH -->
+                    <li class="hidden-sm">
+                        <div class="search_box">
+                            <script type="text/javascript" language="javascript">searchbox_input_changed=false;</script>
+                            <form onsubmit="return searchbox_input_changed;" action="/search/search.php" method="get" class="search_form">
+                                <input type="text" style="width:130px;" onfocus="this.value='';sayt(this);" onchange="searchbox_input_changed=true;" placeholder="SEARCH" value="搜索" name="q" maxlength="64" class="s swap_value searchinput" id="searchField" autocomplete="off">
+                                <input type="submit" style="outline:none;" class="searchsubmit" id="submit" value="">
+                                <input name="site" type="hidden" value="ib_cn_collection" />
+                                <input name="client" type="hidden" value="if_zh-cn_frontend" />
+                                <input name="proxystylesheet" type="hidden" value="if_zh-cn_frontend" />
+                                <input name="ie" type="hidden" value="utf8" />
+                                <input name="ib_entity" type="hidden" value="cn" />
+                                <input name="output" type="hidden" value="xml_no_dtd" />
+                            </form>
+                            <script type="text/javascript" language="javascript">
+                                function sayt(el)
+                                {
+                                    searchAsYouType.initialize(el, true, '/search/');
+                                    searchAsYouTypeConfiguration.ibEntity = 'llc';
+                                    searchAsYouType.setSearchUrl('ib_en_collection');
+                                }
+                            </script>
+                        </div>
+                    </li>
+                    <!-- LOG IN -->
+                    <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle log-in">登录<b class="caret"></b></a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li>
+                                <div class="megamenu-content">
+                                    <div class="row">
+                                        <ul class="col-sm-4 list-unstyled">
+                                            <li class="hidden-xs"><p>交易者工作站</p></li>
+                                            <li><a href="/cn/index.php?f=16350" target="_self" title="这是最新的和最稳定的TWS版本，包含了所有经过测试的最新和经过批准的工具和功能。- TWS最新版本v">TWS最新版本</a></li>
+                                            <li><a href="/cn/index.php?f=16348" target="_self" title="这是经过时间测试的TWS版本，不会像最新版本经常变化，提供了最大的稳定性，但没有包括所有最新的功能。- TWS运行版本v">TWS运行版本</a></li>
+                                            <li><a href="/cn/index.php?f=16351" target="_self" title="TWS Beta版本允许您对您的账户进行交易。Beta版本包括了所有最新的TWS功能，但仍然处于测试阶段，在推出最新版本之前可能还会有改动。- TWS Beta版本v">TWS Beta版本</a></li>
+                                        </ul>
+                                        <ul class="col-sm-4 list-unstyled">
+                                            <li class="hidden-xs"><p>账户管理</p></li>
+                                            <li><a href="https://gdcdyn.interactivebrokers.com/sso/Login?forwardTo=2" target="_blank" title="税务信息">税务信息</a></li>
+                                            <li><a href="https://www.ibkr.com.cn/sso/Login" target="_blank" title="对您盈透证券账户的各个方面进行配置、管理和监控，包括研究和市场数据订阅、报告、注资、交易等等。">账户管理</a></li>
+                                            <li><a href="https://www.ibkr.com.cn/sso/Login?c=t" target="_blank" title="登录您的账户，接续完成您的IB开户申请。">继续完成申请</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="row">
+                                        <ul class="col-sm-4 list-unstyled">
+                                            <li class="hidden-xs"><p>网络交易者</p></li>
+                                            <li><a href="https://gre.wgw.interactivebrokers.com/webtrader/servlet/login" target="_blank" title="是我们基于HTML的交易平台，比TWS具有更简单的交易界面，但仍然包括了高级交易工具的完整功能。">网络交易者运行版本</a></li>
+                                            <li><a href="https://ch.wgw.interactivebrokers.com/webtraderbeta/servlet/login" target="_blank" title="WebTrader Beta版本允许您交易您的IB账户。它包括了网络交易者的所有最新功能，但仍然处于测试阶段，在推出正式运行版本之前仍会有改动。">网络交易者Beta版本</a></li>
+                                        </ul>
+                                        <ul class="col-sm-4 list-unstyled">
+                                            <li class="hidden-xs"><p>应用程序接口（API）进入</p></li>
+                                            <li><a href="/cn/index.php?f=16491" target="_self" title="包括所有最新功能的最新运行版本的IB网关。离线版本不能自动更新。需重新安装最新版本。">最新IB网关</a></li>
+                                            <li><a href="/cn/index.php?f=16492" target="_self"  title="经过时间测试的IB网关版本，相对其它版本更新频率不高。 离线版本不能自动更新。需重新安装最新版本。">IB网关</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="row">
+                                        <hr class="hidden-xs">
+                                        <ul class="col-sm-8 list-unstyled">
+                                            <li><a href="https://gdcdyn.interactivebrokers.com/sso/Login?forwardTo=30" target="_blank">投资组合分析-Beta版<span class="text-red"> （新）</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- OPEN ACCOUNT FOR HOME PAGE -->
+                    <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle open-account">开立账户<b class="caret"></b></a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li>
+                                <div class="megamenu-content">
+                                    <div class="row">
+                                        <ul class="col-sm-8 list-unstyled">
+                                            <li class="hidden-xs"><p class="borderbottom text-black"><span class="text-black">选择一种账户</span></p></li>
+                                        </ul>
+                                    </div>
+                                    <div class="row">
+                                        <ul class="col-sm-4 list-unstyled">
+                                            <li class="hidden-xs"><p>交易者 & 投资人账户</p></li>
+                                            <li><a href="/inv/cn/main.php#open-account" target="_self">交易者或投资人</a></li>
+                                            <li><a href="/sb/cn/main.php#open-account" target="_self">小型公司</a></li>
+                                            <li><a href="/ff/cn/main.php#open-account" target="_self">朋友和家庭顾问</a></li>
+                                            <li><a href="/fo/cn/main.php#open-account" target="_self">家族办公室</a></li>
+                                        </ul>
+                                        <ul class="col-sm-4 list-unstyled">
+                                            <li class="hidden-xs"><p>机构账户</p></li>
+                                            <li><a href="/adv/cn/main.php#open-account" target="_self">注册顾问</a></li>
+                                            <li><a href="/mm/cn/main.php#open-account" target="_self">资金经理</a></li>
+                                            <li><a href="/bro/cn/main.php#open-account" target="_self">经纪商</a></li>
+                                            <li><a href="/ptgs/cn/main.php#open-account" target="_self">自营交易集团</a></li>
+                                            <li><a href="/hmf/cn/main.php#open-account" target="_self">对冲或共同基金</a></li>
+                                            <li><a href="/co/cn/main.php#open-account" target="_self">合规官员</a></li>
+                                            <li><a href="/adm/cn/main.php#open-account" target="_self">管理人</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="row">
+                                        <hr>
+                                        <ul class="col-sm-8 list-unstyled">
+                                            <li><a href="/cn/index.php?f=5146&p=accountstructures" target="_self">如何选择和配置账户</a></li>
+                                            <li><a href="https://www.ibkr.com.cn/sso/Login?c=t" target="_blank">继续或完成您的开户申请</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- FREE TRIAL BUTTON -->
+                    <li class="hidden-xs"><a href="/cn/index.php?f=3416" target="_self" class="demo-account">免费试用</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- END TOP NAVIGATION -->
+    <!-- 手机版导航 -->
+    <div class="navbar megamenu navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header hidden-lg hidden-md hidden-sm">
+                <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/cn/home.php" class="navbar-brand"><img src="images/nav_iblogo_scn.png" alt="Interactive Brokers"></a>
+            </div>
+            <div id="navbar-collapse-1" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav hidden-sm">
+                    <!-- SITES -->
+                    <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">主页<b class="caret"></b></a>
+                        <ul class="dropdown-menu dropdown-menu-left">
+                            <li>
+                                <div class="megamenu-content">
+                                    <div class="row">
+                                        <ul class="col-sm-4 list-unstyled">
+                                            <li><a href="" target="_self">主页</a></li>
+                                            <li><a href=""  target="_self">个人投资人或交易者</a></li>
+                                            <li><a href=""  target="_self">注册顾问</a></li>
+                                            <li><a href=""  target="_self">对冲或共同基金</a></li>
+                                            <li><a href=""  target="_self">资金经理</a></li>
+                                            <li><a href=""  target="_self">自营交易集团</a></li>
+                                            <li><a href=""  target="_self">家族办公室</a></li>
+                                            <li><a href=""  target="_self">小型公司</a></li>
+                                            <li><a href=""  target="_self">朋友和家庭顾问</a></li>
+                                            <li><a href=""  target="_self">介绍经纪商</a></li>
+                                            <li><a href=""  target="_self">激励计划管理</a></li>
+                                            <li><a href=""  target="_self">合规官员</a></li>
+                                            <li><a href=""  target="_self">管理人</a></li>
+                                            <li><a href=""  target="_self">教育者</a></li>
+                                            <li><a href=""  target="_self">推荐人</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- WHY IB DROPDOWN HIDDEN FROM SINGLE ACCOUNT SECTIONS -->
+                    <li><a href="">选择盈透</a></li>
+                    <li class='dropdown'><a href='#' data-toggle='dropdown' class='dropdown-toggle'>费用 <b class='caret'></b></a>
+                        <ul class='dropdown-menu dropdown-menu-left dropdown-menu-col-sm-8'>
+                            <li>
+                                <div class='megamenu-content'>
+                                    <div class='row'>
+                                        <ul class='col-sm-4 list-unstyled'>
+                                            <li><a href='' target='_self'>概括</a></li>
+                                            <li><a href='' target='_self'>佣金</a></li>
+                                            <li><a href='' target='_self'>利息和融资</a></li>
+                                            <li><a href='' target='_self'>研究、新闻和市场数据</a></li>
+                                            <li><a href='' target='_self'>机构研究</a></li>
+                                        </ul>
+                                        <ul class='col-sm-4 list-unstyled'>
+                                            <li><a href='' target='_self'>账户最低要求</a></li>
+                                            <li><a href='' target='_self'>其它费用</a></li>
+                                            <li><a href='' target='_self'>顾问费用</a></li>
+                                            <li><a href='' target='_self'>经纪商客户费用</a></li>
+                                        </ul>
+                                        <ul class='col-sm-4 hidden-lg hidden-md hidden-sm list-unstyled'><li><a href='/features' target='_self'>IB Feature Explorer</a></li></ul>			</div>
+                                    <div class="row hidden-xs">
+                                        <hr>
+                                        <ul class="col-xs-12 col-sm-8 col-md-8 col-lg-8 list-unstyled">
+                                            <li><a href="" target="_self">IB功能检索<span class="text-gray hidden-xs">查寻IB账户的所有优势功能</span></a></li>
+                                        </ul>
+                                    </div>			</div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class='dropdown'><a href='#' data-toggle='dropdown' class='dropdown-toggle'>交易 <b class='caret'></b></a>
+                        <ul class='dropdown-menu dropdown-menu-left dropdown-menu-col-sm-16'>
+                            <li>
+                                <div class='megamenu-content'>
+                                    <div class='row'>
+                                        <ul class='col-sm-4 list-unstyled'>
+                                            <li class='hidden-xs'><p>平台</p></li>
+                                            <li><a href='' target='_self'>交易平台</a></li>
+                                            <li><a href='' target='_self'>交易平台演示</a></li>
+                                            <li><a href='' target='_self'>TWS软件</a></li>
+                                            <li><a href='' target='_self'>应用程序接口（API）方案</a></li>
+                                            <li><a href='' target='_self'>研究平台</a></li>
+                                        </ul>
+                                        <ul class='col-sm-4 list-unstyled'>
+                                            <li class='hidden-xs'><p>技术</p></li>
+                                            <li><a href='' target='_self'>智能传递</a></li>
+                                            <li><a href='' target='_self'>定单类型和算法</a></li>
+                                            <li><a href='' target='_self'>客户活动监测</a></li>
+                                            <li><a href='' target='_self'>第三方服务整合</a></li>
+                                            <li><a href='' target='_self'>客户化标识</a></li>
+                                            <li><a href='' target='_self'>功能聚焦</a></li>
+                                        </ul>
+                                        <div class='hidden-xs hidden-md hidden-lg'><span class='clearfix'></span></div>
+                                        <ul class='col-sm-4 list-unstyled'>
+                                            <li class='hidden-xs'><p>产品</p></li>
+                                            <li><a href='' target='_self'>概括</a></li>
+                                            <li><a href='' target='_self'>产品列表</a></li>
+                                            <li><a href='' target='_self'>交易所列表</a></li>
+                                            <li><a href='' target='_self'>新增产品</a></li>
+                                            <li><a href='' target='_self'>保证金</a></li>
+                                            <li><a href='' target='_blank'>合约搜索</a></li>
+                                        </ul>
+                                        <ul class='col-sm-4 list-unstyled'>
+                                            <li class='hidden-xs'><p>服务</p></li>
+                                            <li><a href='' target='_self'>账户管理</a></li>
+                                            <li><a href='' target='_self'>个人退休账户（IRA）信息</a></li>
+                                            <li><a href='' target='_self'>注资参考</a></li>
+                                            <li><a href='' target='_self'>证券借贷</a></li>
+                                            <li><a href='' target='_blank'>投资人服务市场</a></li>
+                                            <li><a href='' target='_self'>新功能投票</a></li>
+                                            <li><a href='' target='_self'>税务信息和报告</a></li>
+                                        </ul>
+                                        <ul class='col-sm-4 hidden-lg hidden-md hidden-sm list-unstyled'><li><a href='/features' target='_self'>IB Feature Explorer</a></li></ul>			</div>
+                                    <div class="row hidden-xs">
+                                        <hr>
+                                        <ul class="col-sm-8 list-unstyled">
+                                            <li><a href="" target="_self">IB功能检索 <span class="text-gray hidden-xs">查寻IB账户的所有优势功能</span></a></li>
+                                        </ul>
+                                    </div>			</div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class='dropdown'><a href='#' data-toggle='dropdown' class='dropdown-toggle'>教育 <b class='caret'></b></a>
+                        <ul class='dropdown-menu dropdown-menu-left dropdown-menu-col-sm-8'>
+                            <li>
+                                <div class='megamenu-content'>
+                                    <div class='row'>
+                                        <ul class='col-sm-4 list-unstyled'>
+                                            <li class='hidden-xs'><p>交易人大学</p></li>
+                                            <li><a href='' target='_self'>网研会</a></li>
+                                            <li><a href='' target='_self'>IB短视频，课程&平台演示</a></li>
+                                            <li><a href='' target='_self'>用户文档</a></li>
+                                            <li><a href='' target='_self'>应用程序（Apps）</a></li>
+                                            <li><a href='' target='_blank'>Traders' Glossary</a></li>
+                                            <li><a href='' target='_self'>全球交易所</a></li>
+                                        </ul>
+                                        <ul class='col-sm-4 list-unstyled'>
+                                            <li class='hidden-xs'><p>其它资源</p></li>
+                                            <li><a href='' target='_self'>概率实验室</a></li>
+                                            <li><a href='' target='_self'>IB交易员睿智</a></li>
+                                            <li><a href='' target='_self'>交易日历</a></li>
+                                        </ul>
+                                        <ul class='col-sm-4 hidden-lg hidden-md hidden-sm list-unstyled'><li><a href='/features' target='_self'>IB Feature Explorer</a></li></ul>			</div>
+                                    <div class="row hidden-xs">
+                                        <hr>
+                                        <ul class="col-xs-12 col-sm-8 col-md-8 col-lg-8 list-unstyled">
+                                            <li><a href="" target="_self">IB功能检索<span class="text-gray hidden-xs">查寻IB账户的所有优势功能</span></a></li>
+                                        </ul>
+                                    </div>			</div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class='dropdown'><a href='#' data-toggle='dropdown' class='dropdown-toggle'>关于盈透 <b class='caret'></b></a>
+                        <ul class='dropdown-menu dropdown-menu-right dropdown-menu-col-sm-8'>
+                            <li>
+                                <div class='megamenu-content'>
+                                    <div class='row'>
+                                        <ul class='col-sm-4 list-unstyled'>
+                                            <li class='hidden-xs'><p>关于盈透</p></li>
+                                            <li><a href='' target='_self'>盈透证券（IB）信息和历史</a></li>
+                                            <li><a href='' target='_self'>获奖</a></li>
+                                            <li><a href='' target='_self'>IB新闻</a></li>
+                                            <li><a href='' target='_self'>媒体</a></li>
+                                            <li><a href='' target='_self'>现场活动</a></li>
+                                            <li><a href='https://investors.interactivebrokers.com/ir/main.php' target='_blank'>投资人关系</a></li>
+                                        </ul>
+                                        <ul class='col-sm-4 list-unstyled'>
+                                            <li class='hidden-xs'><p>更多...</p></li>
+                                            <li><a href='' target='_self'>评论信件和报道</a></li>
+                                            <li><a href='' target='_self'>IB规管报告和财务信息</a></li>
+                                            <li><a href='' target='_self'>标准普尔评级</a></li>
+                                            <li><a href='' target='_blank'>就业机会</a></li>
+                                        </ul>
+                                        <ul class='col-sm-4 hidden-lg hidden-md hidden-sm list-unstyled'><li><a href='/features' target='_self'>IB Feature Explorer</a></li></ul>			</div>
+                                    <div class="row hidden-xs">
+                                        <hr>
+                                        <ul class="col-xs-12 col-sm-8 col-md-8 col-lg-8 list-unstyled">
+                                            <li><a href="" target="_self">IB功能检索<span class="text-gray hidden-xs">查寻IB账户的所有优势功能</span></a></li>
+                                        </ul>
+                                    </div>			</div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class='dropdown'><a href='#' data-toggle='dropdown' class='dropdown-toggle'>帮助和联系 <b class='caret'></b></a>
+                        <ul class='dropdown-menu dropdown-menu-right dropdown-menu-col-sm-4'>
+                            <li>
+                                <div class='megamenu-content'>
+                                    <div class='row'>
+                                        <ul class='col-sm-4 list-unstyled'>
+                                            <li><a href='' target='_self'>客户服务</a></li>
+                                            <li><a href='' target='_self'>机构客户服务</a></li>
+                                            <li><a href='' target='_self'>联系机构销售</a></li>
+                                            <li><a href='' target='_self'>交易服务台</a></li>
+                                            <li><a href='' target='_blank'>IB知识库</a></li>
+                                            <li><a href='' target='_self'>系统状态</a></li>
+                                        </ul>
+                                        <ul class='col-sm-4 hidden-lg hidden-md hidden-sm list-unstyled'><li><a href='/features' target='_self'>IB Feature Explorer</a></li></ul>			</div>
+                                    <div class="row hidden-xs">
+                                        <hr>
+                                        <ul class="col-sm-4 list-unstyled">
+                                            <li><a href="" target="_self">IB功能检索（Feature Explorer）<span class="text-gray hidden-xs">查寻IB账户的所有优势功能</span></a></li>
+                                        </ul>
+                                    </div>			</div>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- LOGIN MOBILE -->
+                    <li class="hidden-lg hidden-md hidden-sm"><a href="https://www.ibkr.com.cn/sso/Login" target="_blank">账户管理登录</a></li>
+                    <!-- LOGIN MOBILE -->
+                    <li class="hidden-lg hidden-md hidden-sm"><a href="https://gdcdyn.interactivebrokers.com/sso/Login?forwardTo=30" target="_blank">PortfolioAnalyst Beta Log In</a></li>
+                    <!-- OPEN ACCOUNT MOBILE -->
+                    <li class="hidden-lg hidden-md hidden-sm"><a href="/cn/index.php?f=6095" target="_self">开立账户</a></li>
+                    <!-- FREE TRIAL MOBILE -->
+                    <li class="hidden-lg hidden-md hidden-sm"><a href="/cn/index.php?f=3416" target="_self">免费试用</a></li>
+                    <!-- LANGUAGE MOBILE -->
+                    <li class="hidden-lg hidden-md hidden-sm dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">语言<b class="caret"></b></a>
+                        <ul class="dropdown-menu dropdown-menu-left dropdown-menu-col-sm-2">
+                            <li>
+                                <div class="megamenu-content">
+                                    <div class="row">
+                                        <ul class="col-sm-2 list-unstyled">
+                                            <li><a href="https://www.interactivebrokers.com/en/home.php" target="_self">English</a></li>
+                                            <li><a href="https://www.interactivebrokers.com/ind/fr/main.php" target="_self">Français</a></li>
+                                            <li><a href="https://www.interactivebrokers.com/ind/de/main.php" target="_self">Deutsch</a></li>
+                                            <li><a href="https://www.interactivebrokers.com/ind/es/main.php" target="_self">Español</a></li>
+                                            <li><a href="https://www.interactivebrokers.com/ind/it/main.php" target="_self">Italiano</a></li>
+                                            <li><a href="https://www.interactivebrokers.com/ind/ru/main.php" target="_self">Pусский</a></li>
+                                            <li><a href="https://www.interactivebrokers.com/ind/cn/main.php" target="_self">中文简体</a></li>
+                                            <li><a href="https://www.interactivebrokers.com.hk/ind/cn/main.php" target="_self">中文繁體</a></li>
+                                            <li><a href="https://www.interactivebrokers.co.jp/ind/jp/main.php" target="_self">日本語</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+仿站结束代码
+</body>
+</html>

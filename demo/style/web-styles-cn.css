@@ -1,0 +1,196 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* BASIC STYLE OVERRIDES ---------------------------------------------------------------------------------------------------- */
+body {
+	font-family:"Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", Arial, Helvetica, sans-serif;
+	font-weight:lighter;
+	line-height:1.7;
+}
+h1, h2, h3, h4, h5, h6, p, li, th, td, label, input, textarea {
+	font-family:"Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", Arial, Helvetica, sans-serif;
+	font-weight:lighter;
+}
+h1, .h1 {
+	font-size:40px;
+}
+h2, .h2 {
+	font-size:32px;
+}
+h3, .h3 {
+	font-size:26px;
+}
+h4, .h4 {
+	font-size:20px;
+	line-height:1.4;
+}
+h5, .h5 {
+	font-size:20px;
+	line-height:1.4;
+}
+h6, .h6 {
+	font-size:16px;
+	line-height:1.6;
+}
+p, ul, ol, li {
+	font-weight:lighter;
+	font-size:15px;
+	line-height:1.7;
+}
+/* FOOTER ---------------------------------------------------------------------------------------------------- */
+.footer-text {
+	font-size:13px;
+}
+/* FONT STYLES ---------------------------------------------------------------------------------------------------- */
+h1.Title {
+	font-weight:lighter;
+	font-size:30px;
+}
+.table>tbody>tr>td.text-price {
+	font-weight:lighter;
+	font-size:20px;
+}
+.table>tbody>tr.highlight>td.text-price {
+	font-size:20px;
+}
+section.disclosure p, section.disclosure li {
+	font-size:11px;
+}
+.text-small {
+	font-size:10px;
+}
+.text-large {
+	font-size:24px;
+}
+/* TABLES ---------------------------------------------------------------------------------------------------- */
+th {
+	font-weight:lighter;
+	font-size:16px;
+}
+.table_subheader {
+	font-weight:lighter;
+	font-size:13px;
+	text-transform:none;
+}
+.table>tbody>tr.highlight>td {
+	font-weight:lighter;
+	font-size:16px;
+}
+.table>tbody>tr>td {
+	font-size:13px;
+}
+.comm_table_content {
+	font-family:'Raleway', Arial, Helvetica, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif;
+}
+/* BOOTSTRAP BUTTON OVERRIDES ---------------------------------------------------------------------------------------------------- */
+.btn {
+	font-weight:lighter;
+	font-size:14px;
+	font-family:'Raleway', Arial, Helvetica, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", sans-serif;
+	text-transform:none;
+}
+.btn-lg, .btn-group-lg > .btn {
+	font-size:17px;
+	line-height:1.2;
+}
+.btn-sm, .btn-group-sm > .btn {
+	font-size:14px;
+	line-height:1.2;
+}
+.btn-xs, .btn-group-xs > .btn {
+	font-size:12px;
+	line-height:1.1;
+}
+/* JQUERY UI TABS ---------------------------------------------------------------------------------------------------- */
+ul.ui-tabs-nav li a, ul.ui-tabs-nav li a:link, ul.ui-tabs-nav li a:visited, ul.ui-tabs-nav li a:hover, ul.ui-tabs-nav li a:active, ul.ui-tabs-nav li a:focus {
+	font-weight:lighter;
+	font-size:14px;
+	line-height:20px;
+}
+ul.subtabsmenu li a, ul.subtabsmenu li a:link, ul.subtabsmenu li a:visited, ul.subtabsmenu li a:hover, ul.subtabsmenu li a:active, ul.subtabsmenu li a:focus {
+	font-weight:lighter;
+	font-size:14px;
+	line-height:20px;
+}
+/* NAVBARTOP STYLES ---------------------------------------------------------------------------------------------------- */
+.navbartop-inverse .navbar-nav>li>a {
+	font-size:15px;
+}
+.search_form .searchinput {
+	font-size:15px;
+}
+/* NAVBAR STYLE OVERRIDES ---------------------------------------------------------------------------------------------------- */
+.navbar-inverse .navbar-nav > li > a {
+	font-size:15px;
+	text-transform:none;
+}
+/* MEGAMENU DROPDOWN STYLES ---------------------------------------------------------------------------------------------------- */
+.dropdown-menu {
+	font-size:15px;
+	line-height:28px;
+}
+.megamenu .container .navbar-collapse ul.navbar-right li.dropdown ul.dropdown-menu-col-sm-16 {
+    margin-left: -640px;
+}
+/* FOOTER STYLES ---------------------------------------------------------------------------------------------------- */
+footer .container ul.footerlinks > li > a, 
+footer .container ul.footerlinks > li > a:link, 
+footer .container ul.footerlinks > li > a:visited, 
+footer .container ul.footerlinks > li > a:hover, 
+footer .container ul.footerlinks > li > a:active, 
+footer .container ul.footerlinks > li > a:focus  {
+	font-size:14px;
+	line-height:12px;
+}
+footer .container ul.subfooterlinks > li > a, 
+footer .container ul.subfooterlinks > li > a:link, 
+footer .container ul.subfooterlinks > li > a:visited, 
+footer .container ul.subfooterlinks > li > a:hover, 
+footer .container ul.subfooterlinks > li > a:active, 
+footer .container ul.subfooterlinks > li > a:focus {
+    font-size:12px;
+    line-height:20px;
+}
+ul.footerlinks li.open ul.dropdown-menu li {
+	font-size:12px;
+    line-height:20px;
+}
+footer .container h1, footer .container h2, footer .container h3, footer .container h4, footer .container h5, footer .container h6 {
+	font-size:15px;
+	line-height:20px;
+}
+footer .container p, footer .container li {
+	font-size:12px;
+	line-height:20px;
+}
+/* MEDIA QUERIES ---------------------------------------------------------------------------------------------------- */
+@media (min-width:768px) and (max-width:991px) {
+	/* MEGAMENU DROPDOWN STYLES @ 991 */
+	.megamenu .container .navbar-collapse ul.navbar-right li.dropdown ul.dropdown-menu-col-sm-16 {
+		margin-left: -200px;
+	}
+}
+@media (max-width:767px) {
+	/* BOOTSTRAP BUTTON OVERRIDES @ 767 */
+	.btn-lg, .btn-group-lg > .btn {
+		font-size:16px;
+		line-height:1.2;
+	}
+	.btn-sm, .btn-group-sm > .btn, .btn-xs, .btn-group-xs > .btn {
+		font-size:16px;
+		line-height:1.2;
+	}
+	/* JQUERY UI TABS @ 767 */
+	ul.ui-tabs-nav li a, ul.ui-tabs-nav li a:link, ul.ui-tabs-nav li a:visited, ul.ui-tabs-nav li a:hover, ul.ui-tabs-nav li a:active, ul.ui-tabs-nav li a:focus {
+		font-size:14px;
+		line-height:20px;
+	}
+	ul.subtabsmenu li a, ul.subtabsmenu li a:link, ul.subtabsmenu li a:visited, ul.subtabsmenu li a:hover, ul.subtabsmenu li a:active, ul.subtabsmenu li a:focus {
+		font-size:14px;
+		line-height:20px;
+	}
+	/* MEGAMENU DROPDOWN STYLES @ 767 */
+	.megamenu .container .navbar-collapse ul.navbar-right li.dropdown ul.dropdown-menu-col-sm-16 {
+		margin-left: 0px;
+	}
+}
