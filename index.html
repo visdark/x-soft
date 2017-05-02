@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en"  ng-app = 'myApp'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>测试</title>
+    <!--字体样式-->
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_62kklvm82z3q5mi.css">
+    <!--全部样式集合-->
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/prolist.css">
+    <link rel="stylesheet" href="src/css/dynamicNav.css">
+    <!--弹出层组件样式-->
+    <!--<link rel="stylesheet" href="src/css/layui.css">-->
+    <!--<link rel="stylesheet" href="src/css/layer.css">-->
+</head>
+<body>
+<div class="box-app">
+    <div class="box-hd" id="head-content">
+        <div class="box-top" flex="main:left cross:center box:justify">
+            <div flex-box="1" class="title"></div>
+            <div flex-box="1"></div>
+            <div flex-box="1">
+                <div flex="">
+                    <div flex-box="1"> <i class="icon iconfont icon-zuixiaohua" pointer></i>
+                    </div>
+                    <div flex-box="1">
+                        <i class="icon iconfont icon-zuidahua" pointer></i>
+                    </div>
+                    <div flex-box="1">
+                        <i class="icon iconfont icon-guanbi bg-red" pointer></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="box-hd-nav" flex="main:left cross:center box:mean">
+            <div flex-box="2"><i class="icon iconfont icon-FXBTG" style="font-size: 16vw;margin-top: 1vw; "></i></div>
+            <div flex-box="1" pointer><i class="icon iconfont icon-home nav-item"></i><br/>
+                主界面</div>
+            <div flex-box="1" pointer><i class="icon iconfont icon-dollar nav-item"></i><br/>交易区</div>
+            <div flex-box="1" pointer><i class="icon iconfont icon-chat nav-item"></i><br/>聊天室</div>
+            <div flex-box="1" pointer><i class="icon iconfont icon-business nav-item"></i><br/>业务申请</div>
+            <div flex-box="1" pointer><i class="icon iconfont icon-icon02 nav-item"></i><br/>用户中心</div>
+            <div flex-box="1" pointer><i class="icon iconfont icon-news nav-item"></i><br/>新闻</div>
+            <div flex-box="1" pointer><i class="icon iconfont icon-earth nav-item"></i><br/>联系</div>
+            <div flex-box="2"><i class="icon iconfont icon-user"></i> 立即登录<br/>
+                <p>还没有账户，请立即注册</p>
+            </div>
+        </div>
+    </div>
+    <div ui-view></div>
+    <div id="canvas">
+        <canvas id="canvas-demo"></canvas>
+    </div>
+</div>
+
+    <div>wowo</div>
+<script src="http://cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>
+
+    <script type="text/javascript" src = "lib/angular.js"></script>
+    <script type="text/javascript" src = "lib/angular-ui-router.js"></script>
+    <script type="text/javascript" src = "lib/background-canves.js"></script>
+<!--弹出层组件-->
+<script type="text/javascript" src="lib/layer/layer.js"></script>
+    <script type="text/javascript" src = "src/js/app.js"></script>
+</body>
+</html>

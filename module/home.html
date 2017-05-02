@@ -1,0 +1,60 @@
+<div class="box-bd">
+    <div class="box-bd-main" flex="main:left cross:center box:mean">
+        <div class="pro" flex-box="1" id="pro">
+            <div class="hd" flex="main:left cross:center box:justify">
+                <div flex-box="1" class="title">产品列表</div>
+                <div flex-box="1"></div>
+                <div flex-box="1">
+                    <div flex="">
+                        <div flex-box="1">
+                            <i class="icon iconfont icon-guanbi bg-red" pointer></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group dynamicNav">
+                <ul class="nav nav-list">
+                    <li ng-repeat="o in listData">
+                        <a ng-click="addTab($event)" data-order={{$index}}>{{o.name}}</a>
+                    <li>
+                </ul>
+            </div>
+        </div>
+        <div class="chart" flex-box="2" id="chart">
+            <div class="hd" flex="main:left cross:center box:justify">
+                <div flex-box="1">
+                    <div flex="">
+                        <div flex-box="1"> <i class="icon iconfont icon-zuixiaohua" onClick="onGo(this, 'chart', 'pro');"></i>
+                        </div>
+                    </div>
+                </div>
+                <div flex-box="1" style="width:100%;" class="dynamicNav">
+                    <div class="tabContent">
+                        <ul id="tabList">
+                            <li ng-repeat="o in initTab" class="active{{o.state}}">
+                                <a href="javacript:;" ng-click="selectTab($event)" data-order={{o.orderNum}}>{{o.name}}</a>
+                                <span class="close" ng-click="deleteTab($event)" data-order={{o.orderNum}}>x</span>
+                            </li>
+                        </ul>
+                        <button class="tabsLeft" id="btnLeft" style="display: block;" ng-click="toLeft()" disabled>&lt;</button>
+                        <button class="tabsRight" id="btnRight" style="display: block;" ng-click="toRight()" disabled>&gt;</button>
+                    </div>
+
+                </div>
+                <div flex-box="1"></div>
+                <div flex-box="1">
+                    <div flex="">
+                        <div flex-box="1"> <i class="icon iconfont icon-zuixiaohua" pointer></i>
+                        </div>
+                        <div flex-box="1">
+                            <i class="icon iconfont icon-zuidahua" pointer></i>
+                        </div>
+                        <div flex-box="1">
+                            <i class="icon iconfont icon-guanbi bg-red" pointer></i></div>
+                    </div>
+                </div>
+            </div>
+            <div id="showcase-content">走势图展示</div>
+        </div>
+    </div>
+</div>
+<div class="box-ft">盒子3</div>
