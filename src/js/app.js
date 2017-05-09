@@ -4,14 +4,26 @@ var App = angular.module("myApp",['ui.router']);
 * 路由处理
 * */
 App.service("sendData",function () {
-    return {"ss":"dds"}
+    this.toData = function () {
+        var data = {
+            "name":"ssx"
+        }
+        return data;
+    }
+
 })
-App.factory("sendData1",function(){
-    return {"ss":"ddd"}
-})
-App.provider("sendData1",function(){
-    return {"ss":"ddd"}
-})
+/*
+  通过此接口调用。实时触发传送数据，controller自动更新
+ angular.element(document.body).injector().get('sendData').toData()
+*/
+
+// App.factory("sendData1",function(){
+//     return {"ss":"ddd"}
+// });
+
+// App.provider("sendData",function(){
+//     return {"ss":"ddd"}
+// })
 App.config(['$stateProvider','$urlRouterProvider',
     function($stateProvider,$urlRouterProvider) {
         $urlRouterProvider.when("","/module/home");
@@ -81,8 +93,8 @@ function addWindow() {
     });
 }
 
-App.controller("homeCtrol", ['$scope','$rootScope','$compile',
-    function ($scope,$rootScope,$compile) {
+App.controller("homeCtrol", ['$scope','$rootScope','$compile','sendData',
+    function ($scope,$rootScope,$compile,sendData) {
         $scope.listData = [
             {
                 "name":"欧元美元",
@@ -127,6 +139,7 @@ App.controller("homeCtrol", ['$scope','$rootScope','$compile',
                 "name":"nnnn"
             }
         ];
+        console.log(sendData.toData());
         var data = [
             {
                 "name":"欧元/美元",
@@ -362,7 +375,6 @@ App.controller("childCtrl",['$scope',function ($scope) {
 }])
 App.controller("rootCtrl",["$scope","$rootScope",function ($scope,$rootScope) {
     $scope.$on("ai",function (data) {
-
         console.log(data);
     })
     // $scope.gogo = function () {
