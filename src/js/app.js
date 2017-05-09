@@ -3,6 +3,15 @@ var App = angular.module("myApp",['ui.router']);
 /*
 * 路由处理
 * */
+App.service("sendData",function () {
+    return {"ss":"dds"}
+})
+App.factory("sendData1",function(){
+    return {"ss":"ddd"}
+})
+App.provider("sendData1",function(){
+    return {"ss":"ddd"}
+})
 App.config(['$stateProvider','$urlRouterProvider',
     function($stateProvider,$urlRouterProvider) {
         $urlRouterProvider.when("","/module/home");
@@ -12,6 +21,7 @@ App.config(['$stateProvider','$urlRouterProvider',
             templateUrl: 'module/home.html'
         })
     }]);
+
 // App.directive("people", function(){
 //     return {
 //         restrict: "E",
@@ -63,13 +73,6 @@ function addWindow() {
         ]
         ,maxmin: true
         ,content: '不错的弹出层组件'
-        // ,btn: ['继续弹出', '全部关闭'] //只是为了演示
-        // ,yes: function(){
-        //     $(that).click(); //此处只是为了演示，实际使用可以剔除
-        // }
-        // ,btn2: function(){
-        //     layer.closeAll();
-        // }
         // 实现点击置顶
         ,zIndex: layer.zIndex //重点1
         ,success: function(layero){
@@ -77,22 +80,7 @@ function addWindow() {
         }
     });
 }
-layer.config({
 
-})
-// layer.ready(function () {
-//     layer.open({
-//         title:'ssdd',
-//         content:'sdssddds'
-//     })
-// })
-function addWindow1() {
-
-    layer.open({
-        title:'ssdd',
-        content:'sdssddds'
-    })
-}
 App.controller("homeCtrol", ['$scope','$rootScope','$compile',
     function ($scope,$rootScope,$compile) {
         $scope.listData = [
@@ -280,6 +268,10 @@ App.controller("homeCtrol", ['$scope','$rootScope','$compile',
                     }
                 }
             }
+            // 判断是否从tab中删除
+            if(typeof (e)=="object"){
+                layer.close(order);
+            }
 
         }
         /*
@@ -355,7 +347,28 @@ App.controller("homeCtrol", ['$scope','$rootScope','$compile',
                 arr.splice(index,1);
             }
         }
-        $scope.gogo = function () {
-            console.log("dsss")
-        }
+        $scope.$on("hello",function(data){
+            console.log(data);
+        })
 }]);
+
+App.controller("childCtrl",['$scope',function ($scope) {
+
+    $scope.$on("hello",function (data) {
+
+        console.log(data);
+    })
+    $scope.$emit("ai",{"a":"i"})
+}])
+App.controller("rootCtrl",["$scope","$rootScope",function ($scope,$rootScope) {
+    $scope.$on("ai",function (data) {
+
+        console.log(data);
+    })
+    // $scope.gogo = function () {
+    //     console.log("aiyou")
+    //
+    //     $scope.$broadcast("hello",{"name":"sdds"})
+    // }
+    // $scope.gogo();
+}])
