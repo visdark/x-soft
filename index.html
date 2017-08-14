@@ -17,11 +17,11 @@
     <!--<link rel="stylesheet" href="src/css/layer.css">-->
 </head>
 <body>
-<div class="box-app">
+<div class="box-app" ng-controller="rootCtrl">
     <div class="box-hd" id="head-content">
-        <div class="box-top" flex="main:left cross:center box:justify">
-            <div flex-box="1" class="title"></div>
-            <div flex-box="1"></div>
+        <div class="box-top" flex="main:left cross:center box:justify" ng-click="gogo()">
+            <div flex-box="1" class="titl e"></div>
+            <div flex-box="1" ></div>
             <div flex-box="1">
                 <div flex="">
                     <div flex-box="1"> <i class="icon iconfont icon-zuixiaohua" pointer></i>
@@ -34,7 +34,7 @@
                 </div>
             </div>
         </div>
-        <div class="box-hd-nav" flex="main:left cross:center box:mean">
+        <div class="box-hd-nav" flex="main:left cross:center box:mean" ng-controller="childCtrl">
             <div flex-box="2"><i class="icon iconfont icon-FXBTG" style="font-size: 16vw;margin-top: 1vw; "></i></div>
             <div flex-box="1" pointer><i class="icon iconfont icon-home nav-item"></i><br/>
                 主界面</div>
@@ -56,7 +56,7 @@
 </div>
 
     <div>wowo</div>
-<script src="http://cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
 
     <script type="text/javascript" src = "lib/angular.js"></script>
     <script type="text/javascript" src = "lib/angular-ui-router.js"></script>
